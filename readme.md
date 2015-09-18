@@ -21,6 +21,12 @@ Hoisting
 ========
 > Carpeta **00_hoisting**
 
+El interprete va a mover al principio de su contexto la declaración, manteniendo la inicialización donde estaba. **RECOMENDACIÓN: Si el código es complejo, declarar las variables al principio**
+
+Este ejercicio muestra el funcionamiento del hoisiting, mediante una funcion que pinta en consola y muestra despues como quedaria una vez aplicado el hoisting. 
+
+
+
 Servidor Basico
 ===============
 > Carpeta **01_servidorBasico**
