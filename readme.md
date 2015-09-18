@@ -1,21 +1,23 @@
 # Ejercicios del curso de Node.js, Express y Mongo de KeepCoding
 
-1. [Hoisting](#hoisting)
-2. [Servidor Basico](#servidor-basico)
-3. [Callbacks](#callbacks)
-4. [Inicializaciones](#inicializaciones)
-5. [Comparaciones](#comparaciones)
-6. [Leer Fichero](#leer-fichero)
-7. [This y el Bind](#this-y-el-bind)
-8. [Closures](#closures)
-9. [Prototipos](#prototipos)
-10. [Extender](#extender)
-11. [Mixin](#mixin)
-12. [Async](#async)
-13. [EventEmiter](#eventEmiter)
-14. [Modules](#modules)
-15. [Express Basico](#express-Basico)
-16. [Node Api](#node-api)
+0. [Hoisting](#hoisting)
+1. [Servidor Basico](#servidor-basico)
+2. [Callbacks](#callbacks)
+3. [Inicializaciones](#inicializaciones)
+4. [Comparaciones](#comparaciones)
+5. [Leer Fichero](#leer-fichero)
+6. [This y el Bind](#this-y-el-bind)
+7. [Closures](#closures)
+8. [Prototipos](#prototipos)
+9. [Extender](#extender)
+10. [Mixin](#mixin)
+11. [Async](#async)
+12. [EventEmiter](#eventEmiter)
+13. [Modules](#modules)
+14. [Express Basico](#express-Basico)
+15. [Node Api](#node-api)
+16. [Templates](#templates)
+17. [Dependencias](#dependencias)
 
 Hoisting
 ========
@@ -121,3 +123,12 @@ Este comando creara una programa de lineas de comandos que permitirá crear la e
 2. **express . --ejs** - Nos creara la estructura de express, el parametro **.** es el nombre de la carpeta que queremos crear, el parametro **--ejs** es el tipo de *views*.
 3. **nodemon ./bin/www** - mediante esta instrucción arranca el servidor de express.
 4. **DEBUG=15_nodeApi:* nodemon ./bin/www** - Esto nos permite mostrar los mensajes de debug del programa, debemos añadir un campo DEBUG=*carpeta:ficheros*.
+
+Templates
+=========
+> Carpeta 16_templates
+
+Dependencias
+============
+> Carpeta 17_dependencias
+
