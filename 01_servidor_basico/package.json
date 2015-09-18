@@ -1,0 +1,15 @@
+{
+  "name": "01_servidor_basico",
+  "version": "1.0.0",
+  "description": "Este es un servidor basico",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Adrián Polo Alcaide",
+  "license": "ISC",
+  "dependencies": {
+    "chance": "^0.7.7",
+    "express": "^4.13.3"
+  }
+}

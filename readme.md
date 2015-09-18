@@ -25,11 +25,34 @@ El interprete va a mover al principio de su contexto la declaración, manteniend
 
 Este ejercicio muestra el funcionamiento del hoisiting, mediante una funcion que pinta en consola y muestra despues como quedaria una vez aplicado el hoisting. 
 
-
-
 Servidor Basico
 ===============
 > Carpeta **01_servidorBasico**
+
+Estas lineas del proyecto te permiten crear un servidor muy sencillo. Existe una llamada de require, que esta funcion nos permite buscar un modulo y incorporarlo en el proyecto.
+
+El require devuelve un objeto **singleton** no podemos crear más de una instancia llamando a require.
+
+Es proyecto tiene un package.json, dicho paquete contiene información de nuestro proyecto. 
+```json
+{
+  "name": "01_servidor_basico", //Nombre del proyecto
+  "version": "1.0.0", //Versión del proyecto
+  "description": "Este es un servidor basico", //Descripción del proyecto
+  "main": "index.js",// El elemento el cual contiene el inició del programa
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }, // Los scripts que se pueden ejecutar
+  "author": "Adrián Polo Alcaide", // El autor del proyecto
+  "license": "ISC", // Licencia
+  "dependencies": { // Librerias y su dependencias
+    "chance": "^0.7.7",
+    "express": "^4.13.3"
+  }
+}
+```
+
+El caracter de las dependencias **^** significa que actualizara excepto cuando los cambios sean significativos
 
 Callbacks
 =========
