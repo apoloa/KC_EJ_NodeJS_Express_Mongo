@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+  <% include cabecera.ejs %>
+
+    <h1><%= title %></h1>
+    <p>Welcome to <%= title %></p>
+
+    <!-- Esto es empleando el = -->
+    <%= prueba %>
+
+  <!-- Esto es empleando el - -->
+    <%- prueba %>
+
+  <!-- Prueba de bucles -->
+  <h3>El segundo actual es <%= par %></h3>
+
+  <% if (par === 'par') { %>
+    <h2>Ejemplo de una Lista</h2>
+    <% lista.forEach(function(elem) { %>
+        <p><%=elem%><p>
+    <% }) %>
+  <% }%>
+  </body>
+</html>
