@@ -1,4 +1,4 @@
-"use strict";
+'use strict';
 
 var valor = 'hola';
 // Lo que hace Javascript es subir hacia arriba la declaración de la variable, en este caso podemos ver como queda la
