@@ -8,10 +8,12 @@ function versionModulo(nameModule, callback){
     var packageJSONModule = path.join('./','node_modules',nameModule,'package.json');
     fs.readFile(packageJSONModule,{encoding: 'utf8'}, function (err, data) {
         if(err){
-            callback(err,null); // el segundo parámetro con null no es necesario
+            //callback(err,null); // el segundo parámetro con null no es necesario
+            callback(err); 
         }else{
             var jsonModule = JSON.parse(data);
-            callback(false,jsonModule.version); // mejor que false, usa null
+            //callback(false,jsonModule.version); // mejor que false, usa null
+            callback(null,jsonModule.version);
         }
     })
 }

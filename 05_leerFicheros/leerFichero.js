@@ -15,12 +15,10 @@ fs.readFile(fichero, {encoding: 'utf8'}, function(err, data){
         console.error(err);
         return;
     }
-
+    // Convetir su contenido (JSON) en objeto
     var objeto = JSON.parse(data);
     console.log(objeto.nombre);
 });
 
-// Convetir su contenido (JSON) en objeto
 
-// El objeto lo usamos
 
