@@ -12,6 +12,7 @@ var iterador = function(elemento, callback){
 
     if(elemento === 'dos') {
         //return callback(true, null); // deja de enviar
+        // el primer argumento es el error, el segundo el resultado
         return callback(null); // no envia el numero dos pero el tres si
     }
     elemento = elemento + '-procesado';
@@ -23,7 +24,7 @@ var iterador = function(elemento, callback){
 // procesar el array
 
 async.concat(arr,iterador, function (err, resultados) {
+	// mostrar resultados
     console.log(resultados);
 });
 
-// mostrar resultados

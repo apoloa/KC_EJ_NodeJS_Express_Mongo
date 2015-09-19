@@ -21,7 +21,7 @@ var util = require('util');
 
 Persona.prototype = util._extend(Persona.prototype,matrixMixin);
 
-var neo = new Persona('Thomas, Anderson');
+var neo = new Persona('Thomas', 'Anderson');
 
 
 neo.vuela();

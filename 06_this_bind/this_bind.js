@@ -29,6 +29,12 @@ setTimeout(tesla.saluda.bind(tesla), 2000);
 // tenemos otras funcines para realizar lo mismo
 
 setTimeout(tesla.saluda.call(tesla),3000); // esto ejecuta la función y devuelve el resultado al timeout.
+
+// cuidado con esto -----^  setTimeout debe recibir una función, 
+// no el valor que devuelva la función saluda, aqui la estas llamando y 
+// pasando el valor a setTimeout
+
+
 console.log("Se ha llamado");
 var Planta = function(name){
     this.name = name;
