@@ -5,8 +5,9 @@
 
 
 function crearClosure(name){
+	var precio = 80;
     return function(){
-        console.log(name);
+        console.log(name + ' ' + precio);
     }
 }
 
