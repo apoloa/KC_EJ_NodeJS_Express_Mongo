@@ -9,7 +9,7 @@ function versionModulo(nameModule, callback){
     fs.readFile(packageJSONModule,{encoding: 'utf8'}, function (err, data) {
         if(err){
             //callback(err,null); // el segundo parámetro con null no es necesario
-            callback(err); 
+            callback(err);
         }else{
             var jsonModule = JSON.parse(data);
             //callback(false,jsonModule.version); // mejor que false, usa null
