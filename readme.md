@@ -64,6 +64,17 @@ Inicializaciones
 ================
 > Carpeta **03_inicializacion**
 
+Tipos y Variables
+-----------------
+Primitivos:
+
+* boolean --> true o false
+* undefined --> No definidas o que no han tenido nunca valor
+* number --> enteros o decimales
+* string --> se pueden definir como comillas simples(') o dobles(")
+
+Todos los demás nos objetos
+
 Comparaciones
 =============
 > Carpeta **04_comparaciones**
