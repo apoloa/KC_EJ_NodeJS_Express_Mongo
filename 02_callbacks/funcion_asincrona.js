@@ -37,7 +37,6 @@ function serie(numero, func, callback){
 /*
 Funcion que prueba el funcionamiento del bucle iterador mediante recursividad
  */
-
 serie(5, escribeTras2Segundos, function () {
     console.log("proceso finalizado");
 });
