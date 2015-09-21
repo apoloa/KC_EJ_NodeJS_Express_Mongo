@@ -19,11 +19,17 @@
   <!-- Prueba de bucles -->
   <h3>El segundo actual es <%= par %></h3>
 
+
+  <!-- Bucle -->
   <% if (par === 'par') { %>
     <h2>Ejemplo de una Lista</h2>
     <% lista.forEach(function(elem) { %>
         <p><%=elem%><p>
     <% }) %>
   <% }%>
+    <!-- Mirar si estan las variables o no-->
+
+  <p>Variable que no existe: <%= locals.par1? locals.par2 : 'No Existe' %></p>
+   
   </body>
 </html>
