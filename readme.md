@@ -157,6 +157,45 @@ MySql
 
 Mediante el comando **npm install mysql** podemos instalar el mysql. 
 
+MongoDB
+-------
+MongoDB es una base de datos no relaciona sin esquemas, esto significa que:
+
+* No tenemos JOIN, tendremos que hacerlo nosotros.
+* Cada registro podría tener una estructura distinta, podemos meter registros sin importar el tipos de registros.
+* Minimo soporte a transacciones.
+
+El sistema se inicia por el puerto 27017.
+
+Para crear una nueva base de datos desde la linea de coma
+
+
+Comandos de Mongodb 
+
+* show dbs --> muestra las bases de datos de mongo.
+* use 'database' --> cambia a la base de datos, no es necesario que exista.
+* show collections --> muestra las colecciones de la base de datos en las que nos encontramos (debemos hacer el comando 'use' antes).
+* db.'collection'.find().pretty() --> Nos da el contenido de la collecion, de forma pretty nos da la información de forma amigable
+* show users --> Nos enseña los usuarios
+* db.'collection'.insert({json}) --> Inserta en la coleccion
+* db.'collection'.remove({_id:ObjectId("ID")})
+* db.'collection'.update({_id:ObjectId("ID")}, {$set: {campo: clave}}) --> Actualiza el campo
+* db.coleccion.drop() --> Borra toda la colección
+* db.'collection'.createIndex({campo:1, campo2:-1}) --> Crea un indice para el campo uno de forma ascendendente (1) y el segundo campo de forma descendente (-1)
+* db.agentes.getIndexes()
+
+Busquedas de Mongo
+
+* db.'collection'.find({campo a buscar JSON: valor})
+* db.'collection'.find({campo a buscar: {$gt : valor});
+* db.'collection'.find({campo a buscar: {$gt : valorMenor, $lt: valorMayor}})
+* db.'collection'.find({campo a buscar: {$in(and): [Valor a buscar, Valor a buscar]}}) --> Para no buscar con
+* db.'collection'.find({campo a buscar: $or: [ { age: { $lt
+
+Crear subdocumentos:
+
+
+
 MySQL + EJS
 ===========
 > Carpeta **19_listarAgentes
