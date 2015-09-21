@@ -12,7 +12,7 @@ router.get('/', function (req, res, next) {
             console.log(err);
             return next(err);
             // Acordarse de poner el return sino que seguiria el res.render de abajo. Entonces saldria error por
-            // intentar responder 2 veces 
+            // intentar responder 2 veces
         }
         res.render('dependencies', {data: data});
     });
