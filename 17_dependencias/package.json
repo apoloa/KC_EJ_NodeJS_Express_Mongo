@@ -3,7 +3,9 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "start": "node ./bin/www"
+    "start": "node ./bin/www", // Aqui deberiamos poner el arranque en normal
+    "dev" : "DEBUG=17_dependencies:* PORT=3000 nodemon ./bin/www"
+    // Cuando pongamos 'npm run dev' ejecutará este comando, que cargará de forma correcta
   },
   "dependencies": {
     "body-parser": "~1.13.2",
