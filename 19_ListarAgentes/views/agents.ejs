@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+</head>
+<body>
+
+    <h2>Lista de Agentes:</h2>
+    <table>
+        <tr>
+            <th> ID Agents</th>
+            <th> Name</th>
+            <th> Age</th>
+        </tr>
+        <% agents.forEach(function(elem) { %>
+            <tr>
+                <td>
+                    <%=elem.idagentes%>
+                </td>
+                <td>
+                    <%=elem.name%>
+                </td>
+                <td>
+                    <%=elem.age%>
+                </td>
+            </tr>
+        <% }) %>
+    </table>
+
+
+
+
+
+</body>
+</html>
+
+

@@ -143,3 +143,21 @@ Dependencias
 ============
 > Carpeta 17_dependencias
 
+Conectores de Bases de Datos
+============================
+
+Tenemos todo tipos de drivers para base de datos, debemos elegir el que más nos convenga.
+
+MySql
+-----
+> Carpeta **18_nodeApi**
+
+Mediante el comando **npm install mysql** podemos instalar el mysql. 
+
+
+
+MySQL + EJS
+===========
+> Carpeta **19_listarAgentes
+
+
