@@ -5,7 +5,6 @@
 var mysql = require('mysql');
 
 // Crear una conexion
-
 var connection = mysql.createConnection({
     host: 'didimo.es',
     user: 'usuariocurso',
@@ -14,11 +13,10 @@ var connection = mysql.createConnection({
 });
 
 // Conectar
-
+// Podemos realizar el connect con un callback que nos devuelve cuando ha sido conectado
 connection.connect();
 
 // Realizar una query.
-
 connection.query('SELECT * FROM agentes', function(err, rows, fields){
     if(err){
         throw err;
