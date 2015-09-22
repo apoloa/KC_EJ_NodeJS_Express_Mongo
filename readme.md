@@ -63,6 +63,8 @@ Callbacks
 =========
 > Carpeta **02_callbacks**
 
+
+
 Inicializaciones
 ================
 > Carpeta **03_inicializacion**
@@ -81,6 +83,8 @@ Todos los demás nos objetos
 Comparaciones
 =============
 > Carpeta **04_comparaciones**
+
+Ejercicio que nos enseña la diferencia **==** y **===** en javascript. 
 
 Leer Fichero
 ============
@@ -142,6 +146,16 @@ Templates
 =========
 > Carpeta 16_templates
 
+Ejercicio que muestra las posibilidades que puede realizar los templates.
+
+Podemos crear un proyecto con otro tipo de template, ya que tenemos diversos tipos de templates. 
+
+EJS
+----
+El EJS es un template que es similar a HTML. Aunque permite tags con el contenido **<% %>**. En esos tags podemos introducir codigo Javascript, que será interpretado antes de servir la pagina.
+
+*Es importante no poner mucho codigo en los templates, ya que la detección de errores es bastante complejo*
+
 Dependencias
 ============
 > Carpeta 17_dependencias
@@ -194,10 +208,14 @@ Busquedas de Mongo
 
 Crear subdocumentos:
 
-
+Se pueden crear subdocumentos, lo que quiere decir subobjectos dentro de variables. 
 
 MySQL + EJS
 ===========
 > Carpeta **19_listarAgentes
+
+En este ejercicio podemos ver el funcionamiento del conector mysql y los templates. 
+
+Es importante organizar el codigo de forma correcta, para ello se crea en la carpeta lib (sería mejor incorporar una carpeta model o db) y alli insertamos el conector de base de datos. 
 
 
